@@ -1,0 +1,13 @@
+.stat {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--small-stat-bg-c);
+	padding-block: 10px;
+	max-height: 200px;
+}
+
+.title {
+	text-align: center;
+}

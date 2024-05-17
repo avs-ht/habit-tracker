@@ -1,0 +1,42 @@
+.panel {
+	margin-bottom: 20px;
+}
+
+.basic-buttons {
+	display: flex;
+	align-items: center;
+	gap: 15px;
+	width: max-content;
+	margin-bottom: 20px;
+	@media (max-width: 520px) {
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+}
+.buttons {
+	border: var(--habit-bc) 5px dashed;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	align-items: center;
+	padding: 10px;
+	max-width: max-content;
+	margin-bottom: 10px;
+}
+.action-button-container {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+}
+.progress {
+	display: flex;
+	flex-direction: column;
+	align-self: start;
+	gap: 10px;
+}
+
+.down-buttons {
+	display: flex;
+	gap: 10px;
+	flex-wrap: wrap;
+}

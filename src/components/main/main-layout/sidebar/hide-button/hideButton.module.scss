@@ -1,0 +1,16 @@
+.button {
+	position: absolute;
+	bottom: 5px;
+	right: 5px;
+	width: max-content;
+	cursor: pointer;
+
+	&[data-hidden='true'] {
+		bottom: 0;
+		left: 0;
+		margin-inline: auto;
+		.icon {
+			transform: rotate(180deg);
+		}
+	}
+}

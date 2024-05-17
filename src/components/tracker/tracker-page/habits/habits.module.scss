@@ -1,0 +1,22 @@
+.habits {
+	padding-top: 20px;
+	display: grid;
+	grid-template-columns: repeat(3, minmax(200px, 1fr));
+	gap: 1rem;
+	&:not(:empty) {
+		margin-bottom: 20px;
+	}
+	@media (max-width: 680px) {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	@media (max-width: 480px) {
+		grid-template-columns: 1fr;
+	}
+}
+
+.pagination-buttons {
+	display: flex;
+	gap: 10px;
+	flex-wrap: wrap;
+}

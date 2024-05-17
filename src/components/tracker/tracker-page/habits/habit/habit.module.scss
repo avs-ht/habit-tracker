@@ -1,0 +1,7 @@
+.habit-container {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	padding: 10px;
+	border: 5px dashed var(--habit-bc);
+}

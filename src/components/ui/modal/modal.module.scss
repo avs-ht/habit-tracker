@@ -1,0 +1,29 @@
+.close-button {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	top: 5px;
+	right: 5px;
+	width: max-content;
+	cursor: pointer;
+	color: red;
+	font-size: var(--fsh3);
+	line-height: 1;
+}
+.dialog {
+	overflow: hidden;
+	background-color: var(--modal-bg-c);
+	position: fixed;
+	border: none;
+	margin: auto;
+	padding: 25px;
+	z-index: 9999;
+	align-items: center;
+	justify-content: center;
+	&::backdrop {
+		background-color: var(--backdrop-c);
+	}
+	&[open] {
+		display: flex;
+	}
+}

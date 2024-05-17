@@ -1,0 +1,30 @@
+.choice {
+	cursor: pointer;
+	transition: 0.2s color;
+
+	&[data-active='true'] {
+		color: #fff;
+		font-style: italic;
+	}
+}
+
+.title {
+	margin-bottom: 20px;
+}
+
+.requests[data-active='false'] {
+	position: relative;
+	&[data-tag]:not([data-tag='']):after {
+		content: attr(data-tag);
+		position: absolute;
+		top: 0;
+		right: -20px;
+		width: 20px;
+		text-align: center;
+		line-height: 20px;
+		aspect-ratio: 1/1;
+		border-radius: 50%;
+		background-color: var(--nav-bg-c);
+		font-size: var(--fsh5);
+	}
+}

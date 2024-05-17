@@ -1,0 +1,28 @@
+.buttons {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 10px;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.testing-cover {
+	--button-bg-c: rgb(136, 134, 253);
+	--button-c: #e7e7e7;
+	--button-bc: var(--button-c);
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: transparent;
+	z-index: 9999;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}

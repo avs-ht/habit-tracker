@@ -1,0 +1,150 @@
+.dialog {
+	width: 100%;
+	height: 100%;
+	background-color: transparent;
+	&::backdrop {
+		background-color: transparent;
+	}
+	overflow: hidden;
+}
+
+.sora {
+	position: absolute;
+	left: 35%;
+	top: 25%;
+	@media (max-width: 1260px) and (min-width: 1025px) {
+		top: 35%;
+
+		&[data-order='4'] {
+			top: 10%;
+			left: 0;
+		}
+		&[data-order='8'],
+		&[data-order='6'] {
+			top: 50%;
+			left: 0;
+		}
+		&[data-order='10'] {
+			left: 40%;
+			top: 40%;
+		}
+	}
+	@media (max-width: 720px) and (min-width: 600px) {
+		left: 0;
+		bottom: 0;
+		transform: translateY(20%);
+		&[data-order='4'] {
+			left: 20%;
+		}
+		&[data-order='8'],
+		&[data-order='9'],
+		&[data-order='6'] {
+			top: 50%;
+			left: 0;
+		}
+		&[data-order='13'],
+		&[data-order='14'] {
+			top: 50%;
+			left: 30%;
+		}
+		&[data-order='10'] {
+			left: 30%;
+			top: 30%;
+		}
+	}
+	@media (max-width: 600px) {
+		img {
+			height: 250px;
+		}
+	}
+	@media (max-width: 600px) and (min-width: 520px) {
+		&[data-order='6'] {
+			top: 60%;
+			left: 20%;
+		}
+		&[data-order='10'] {
+			top: 40%;
+			left: 30%;
+		}
+	}
+
+	@media (max-width: 520px) and (min-width: 361px) {
+		bottom: 0;
+		left: 0;
+		transform: translateY(40%);
+
+		&[data-order='4'] {
+			top: -20%;
+		}
+		&[data-order='6'] {
+			top: 35%;
+		}
+		&[data-order='9'] {
+			top: 20%;
+		}
+		&[data-order='10'],
+		&[data-order='13'] {
+			top: 40%;
+		}
+	}
+
+	@media (max-width: 360px) {
+		bottom: 0;
+
+		transform: translateY(30%);
+		left: 0;
+		display: flex;
+		img {
+			height: 200px;
+			width: auto;
+		}
+		&[data-order='4'] {
+			top: -40%;
+		}
+
+		&[data-order='6'] {
+			top: 50%;
+		}
+		&[data-order='13'] &[data-order='10'] {
+			top: 45%;
+		}
+	}
+}
+.bubble {
+	@media (max-width: 1025px) {
+		width: 300px;
+	}
+	@media (max-width: 600px) {
+		width: 200px;
+	}
+	@media (max-width: 360px) {
+		min-height: 160px;
+		width: 190px;
+		&::after {
+			display: none;
+		}
+	}
+}
+.bubble-container {
+	position: absolute !important;
+	top: -20%;
+	left: 95%;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	@media (max-width: 600px) {
+		padding: 10px;
+	}
+	@media (max-width: 360px) {
+		top: 0;
+		left: 0;
+	}
+	@media (max-width: 360px) {
+		padding: 0;
+		position: static !important;
+	}
+}
+.button {
+	font-size: var(--fsh3);
+	outline: none;
+}

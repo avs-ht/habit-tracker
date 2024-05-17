@@ -1,0 +1,32 @@
+.label {
+	max-width: max-content;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	position: relative;
+	margin-bottom: 12px;
+	cursor: pointer;
+	font-size: var(--fscb);
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	color: var(--checkbox-label-c);
+	.checkmark {
+		height: 25px;
+		background-color: var(--checkbox-bg-c);
+		aspect-ratio: 1 / 1;
+	}
+	.checkbox {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		opacity: 0;
+		cursor: pointer;
+		&:checked + .checkmark {
+			background-color: var(--checkbox-active-bg-c);
+		}
+	}
+}

@@ -1,0 +1,16 @@
+.habit-history {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	max-width: 50%;
+	@media (max-width: 520px) {
+		max-width: 100%;
+	}
+	margin-bottom: 20px;
+}
+
+.history-buttons {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}

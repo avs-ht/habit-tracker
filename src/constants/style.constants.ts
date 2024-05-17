@@ -1,0 +1,6 @@
+export const CLOSED_SIDEBAR_WIDTH = 50
+export const BREAK_POINTS = {
+	LAPTOP: 1024,
+	TABLET: 768,
+	MOBILE: 480,
+}

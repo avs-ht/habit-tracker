@@ -1,0 +1,23 @@
+.button {
+	width: max-content;
+	background-color: var(--button-bg-c) !important;
+	color: var(--button-c) !important;
+	border: 3px solid var(--button-bc) !important;
+
+	display: flex;
+	gap: 10px;
+	align-items: center;
+
+	padding: 10px;
+	font-size: var(--fsbutton) !important;
+	text-align: center;
+	&[disabled],
+	&[disabled='true'] {
+		opacity: 0.5;
+		cursor: no-drop;
+	}
+	&.breakable {
+		width: auto;
+		max-width: max-content;
+	}
+}

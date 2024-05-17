@@ -1,0 +1,13 @@
+.form {
+	width: max-content;
+	display: flex;
+	flex-direction: column;
+}
+.input {
+	margin-bottom: 10px;
+}
+.inputs {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}

@@ -1,0 +1,13 @@
+.link {
+	font-size: var(--fshl);
+	font-weight: bold;
+	color: var(--link-c) !important;
+	text-align: center;
+	max-width: max-content;
+	transition: 0.3s color ease-in-out;
+
+	&:hover,
+	&.active {
+		color: var(--active-link-c) !important;
+	}
+}

@@ -1,0 +1,53 @@
+.rating {
+	table-layout: fixed;
+	width: 100%;
+	border-collapse: collapse;
+	margin-top: 20px;
+	margin-bottom: 20px;
+
+	thead {
+		background-color: var(--table-head-c);
+		color: white;
+	}
+	th,
+	td {
+		padding: 10px;
+		text-align: center;
+	}
+	th {
+		background-color: var(--table-th-c);
+		color: white;
+		&.name {
+			max-width: 40%;
+		}
+		&.place,
+		&.excitment,
+		&.face {
+			width: 20%;
+		}
+	}
+	.user {
+		border-bottom: 2px solid var(--primary-c);
+		&:hover {
+			background-color: #f5f5f5;
+		}
+	}
+	td {
+		color: var(--table-td-c);
+		&:first-child {
+			border-left: none;
+		}
+		&:last-child {
+			border-right: none;
+		}
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+}
+
+.buttons {
+	display: flex;
+	gap: 10px;
+	flex-wrap: wrap;
+}

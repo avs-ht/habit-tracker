@@ -1,0 +1,14 @@
+.input {
+	border: none;
+	background-color: transparent !important;
+	padding: 0;
+	color: var(--title-c);
+	font-size: var(--fsh3);
+	font-weight: bold;
+	font-family: var(--title-ff);
+}
+.name {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}

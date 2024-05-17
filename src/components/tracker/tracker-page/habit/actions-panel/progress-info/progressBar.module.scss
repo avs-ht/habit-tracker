@@ -1,0 +1,27 @@
+.container {
+	display: flex;
+	gap: 10px;
+}
+.progress-bar {
+	--scale: 0;
+	--bar-color: var(--progress-bar-bad-c);
+
+	width: 100%;
+	height: 20px;
+	background-color: #eaeaea;
+	border-radius: 10px;
+	position: relative;
+	&:after {
+		content: '';
+		height: 100%;
+		width: 100%;
+		transform: scaleX(var(--scale));
+		transform-origin: left center;
+		background-color: var(--bar-color);
+		border-top-left-radius: inherit;
+		border-bottom-left-radius: inherit;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+}

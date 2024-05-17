@@ -1,0 +1,155 @@
+:root {
+	// Размер контейнера
+	--width-container: 1400px;
+	--padding-container: 20px;
+
+	--width-sidebar: 350px;
+	--width-closed-sidebar: 90px;
+	// Шрифты
+	// ff - font family
+	--text-ff: 'Noto Sans', sans-serif;
+	--title-ff: 'Oswald';
+	// fs - font size
+	--fsn: clamp(0.75rem, 0.526vw + 0.526rem, 1rem); // normal, стандартный
+	--fsh1: clamp(1.25rem, 2.679vw + 0.089rem, 2.5rem); // h1
+	--fsh2: clamp(1.5rem, 1.964vw + 0.232rem, 2rem); // h2
+	--fsh3: clamp(1rem, 1.25vw + 0.375rem, 1.5rem); // h3
+	--fsh4: 1.25rem; // h4
+	--fsh5: 1.125rem; // h5
+	--fssdl: clamp(
+		1rem,
+		1.07vw + 0.786rem,
+		1.75rem
+	); // (sidebar link) Размер ссылок слева
+
+	--fshl: clamp(
+		1rem,
+		1.471vw + 0.559rem,
+		1.5rem
+	); // (header link) Размер ссылок в шапке
+
+	--fsbutton: clamp(0.85rem, 0.438vw + 0.725rem, 1.25rem); // button font size
+
+	--fscb: clamp(
+		0.875rem,
+		0.401vw + 0.768rem,
+		1.25rem
+	); // checkbox font size Размер лэйбла в чекбоксе
+	--fsi: clamp(0.875rem, 0.375vw + 0.8rem, 1.25rem); // input
+	--fsbubble: var(--fsn);
+	// c - color
+	// bc - border-color
+	// bg - background-color
+	&[data-theme='dark'] {
+		--bg-c: hsl(0, 0%, 5%);
+		--nav-bg-c: hsl(0, 0%, 15%);
+		--primary-c: hsl(0, 0%, 75%);
+		--title-c: hsl(0, 0%, 90%);
+		--link-c: var(--bg-c);
+		--active-link-c: #fff;
+	}
+	&[data-theme='blue'] {
+		--bg-c: hsl(193, 69%, 88%);
+		--nav-bg-c: hsl(194, 100%, 71%);
+		--primary-c: hsl(189, 44%, 43%); // главный цвет (основная часть текста)
+		--title-c: hsl(182, 83%, 9%); // цвет заголовков};
+		--link-c: var(--bg-c);
+		--active-link-c: #fff;
+	}
+	&[data-theme='light'] {
+		--bg-c: hsl(0, 0%, 95%);
+		--nav-bg-c: hsl(0, 0%, 85%);
+		--primary-c: hsl(0, 0%, 50%);
+		--title-c: hsl(0, 0%, 10%);
+		--link-c: var(--bg-c);
+		--active-link-c: #333;
+
+		--button-bg-c: var(--nav-bg-c);
+		--button-c: #333;
+		--button-bc: var(--button-c);
+
+		--modal-bg-c: var(--nav-bg-c);
+
+		--input-bg-c: #fff;
+		--input-placeholder-c: var(--active-link-c);
+
+		--input-bc: #fff;
+		--habit-bc: var(--nav-bg-c);
+
+		--checkbox-bg-c: #fff;
+		--checkbox-active-bg-c: var(--nav-bg-c);
+		--checkbox-label-c: var(--primary-c);
+
+		--small-stat-bg-c: var(--nav-bg-c);
+	}
+	&[data-theme='green'] {
+		--bg-c: hsl(120, 69%, 88%);
+		--nav-bg-c: hsl(121, 100%, 71%);
+		--primary-c: hsl(116, 44%, 43%);
+		--title-c: hsl(112, 83%, 9%);
+		--link-c: var(--bg-c);
+		--active-link-c: #fff;
+	}
+	&[data-theme='pink'] {
+		--bg-c: hsl(340, 69%, 88%);
+		--nav-bg-c: hsl(341, 100%, 71%);
+		--primary-c: hsl(336, 44%, 43%);
+		--title-c: hsl(332, 83%, 9%);
+		--link-c: var(--bg-c);
+		--active-link-c: #fff;
+	}
+	&[data-theme='purple'] {
+		--bg-c: hsl(270, 69%, 88%);
+		--nav-bg-c: hsl(271, 100%, 71%);
+		--primary-c: hsl(266, 44%, 43%);
+		--title-c: hsl(262, 83%, 9%);
+		--link-c: var(--bg-c);
+		--active-link-c: #fff;
+		--backdrop-c: rgba(150, 150, 150, 0.596);
+	}
+	&[data-theme='yellow'] {
+		--bg-c: hsl(60, 69%, 88%);
+		--nav-bg-c: hsl(61, 100%, 71%);
+		--primary-c: hsl(56, 44%, 43%);
+		--title-c: hsl(52, 83%, 9%);
+		--link-c: var(--bg-c);
+		--active-link-c: #fff;
+	}
+	&[data-theme='custom'] {
+		--custom-button-c: #000;
+	}
+
+	--backdrop-c: rgba(150, 150, 150, 0.596);
+	--button-bg-c: var(--nav-bg-c);
+	--button-c: var(--custom-button-c, #fff);
+	--button-bc: var(--button-c);
+
+	--modal-bg-c: var(--nav-bg-c);
+
+	--input-bg-c: #fff;
+	--input-placeholder-c: var(--active-link-c);
+
+	--input-bc: #fff;
+
+	--habit-bc: var(--nav-bg-c);
+
+	--checkbox-bg-c: #fff;
+	--checkbox-active-bg-c: var(--nav-bg-c);
+	--checkbox-label-c: var(--primary-c);
+
+	--progress-bar-bad-c: #f44336;
+	--progress-bar-middle-c: #ff9800;
+	--progress-bar-good-c: #4caf50;
+
+	--small-stat-bg-c: var(--nav-bg-c);
+
+	--shop-divider-c: var(--nav-bg-c);
+
+	--table-head-c: var(--nav-bg-c);
+	--table-th-c: var(--primary-c);
+	--table-td-c: var(--title-c);
+
+	@media (max-width: 520px) {
+		--fshl: 1.4rem;
+	}
+}

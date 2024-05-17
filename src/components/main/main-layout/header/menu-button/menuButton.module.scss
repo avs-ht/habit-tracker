@@ -1,0 +1,22 @@
+.burger {
+	.line {
+		width: 25px;
+		height: 3px;
+		background-color: #fff;
+		margin: 5px;
+		transition: all 0.3s ease;
+	}
+	&.active {
+		.line {
+			&:nth-child(1) {
+				transform: rotate(45deg) translate(8px, 8px);
+			}
+			&:nth-child(2) {
+				opacity: 0;
+			}
+			&:nth-child(3) {
+				transform: rotate(-45deg) translate(8px, -8px);
+			}
+		}
+	}
+}
